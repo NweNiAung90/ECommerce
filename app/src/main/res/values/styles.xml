@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -17,4 +19,13 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_shopping_basket_white_24dp</item>
+    </style>
+
+    <style name="category">
+        <item name="android:layout_marginTop">@dimen/margin_medium_2</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium_2</item>
+
+    </style>
 </resources>

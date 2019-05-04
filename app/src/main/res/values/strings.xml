@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Ecommerce-Assignment</string>
     <string name="action_settings">Settings</string>
+    <string name="search">What are you looking for?</string>
+    <string name="plant">Plant</string>
+    <string name="catus">Catus</string>
+    <string name="catus_price">$25</string>
+    <string name="category">Category</string>
+    <string name="hot_item">Hot Item</string>
+    <string name="product_description">In addtion to being a decoration, cactus can also be a health benefit, let buy cactus in our store becaus now discount 30%</string>
+
+
 </resources>

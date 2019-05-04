@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+            android:id="@+id/ivProductDetails"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="300dp"
+            android:src="@drawable/catus"/>
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:clickable="true"
+               android:layout_alignBottom="@+id/ivProductDetails"
+               android:layout_alignParentRight="true"
+               android:paddingRight="@dimen/margin_medium_2"
+               android:layout_marginBottom="@dimen/margin_medium_2"
+               android:src="@drawable/ic_favorite_white_24dp"/>
+    <TextView
+            android:id="@+id/tvProductDetailsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_3x"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_below="@+id/ivProductDetails"
+            android:text="@string/catus"/>
+
+    <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:textColor="@color/primary"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_below="@+id/tvProductDetailsName"
+            android:text="@string/catus_price"/>
+
+    <View android:id="@+id/v_line"
+          android:layout_width="wrap_content"
+          android:layout_height="1dp"
+          android:layout_below="@+id/tvProductPrice"
+          android:layout_margin="@dimen/margin_medium_2"
+          android:background="@color/colorAsh"/>
+
+    <TextView
+            android:id="@+id/tvProductDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_below="@+id/v_line"
+            android:text="@string/product_description"/>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_below="@+id/tvProductDescription"
+            android:textColor="@color/white_full"
+            android:layout_margin="@dimen/margin_medium_2"
+            android:background="@drawable/rounded_corner_primary"/>
+</RelativeLayout>

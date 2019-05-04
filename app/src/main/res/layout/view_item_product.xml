@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:card_view="http://schemas.android.com/tools"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/margin_medium_2"
+            card_view:cardElevation="@dimen/margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+                    android:id="@+id/ivProduct"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_height="200dp"
+                    android:src="@drawable/catus"/>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:layout_alignBottom="@+id/ivProduct"
+                  android:background="@drawable/rounded_corner_grey">
+
+            </View>
+            <TextView
+                    android:id="@+id/tvProductDetailsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white_full"
+                    android:shadowColor="@color/light_grey"
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:layout_above="@+id/tvProductPrice"
+                    android:text="@string/catus"/>
+
+            <TextView
+                    android:id="@+id/tvProductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:textColor="@color/white_full"
+                    android:shadowColor="@color/light_grey"
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:layout_alignBottom="@+id/ivProduct"
+                    android:text="@string/catus_price"/>
+
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium_2"
+                    android:layout_alignRight="@id/ivProduct"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:layout_alignBottom="@+id/ivProduct"
+                    android:src="@drawable/ic_favorite_white_24dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

@@ -27,6 +27,9 @@ class MainActivity : BaseActivity(),ProductItemDelegate,ProductDelegate,Category
         mCategoryAdapter = CategoryAdapter(applicationContext)
         mProductAdapter = ProductAdapter(applicationContext,this)
     }
+   /* private lateinit var mCategoryAdapter : CategoryAdapter
+
+    private lateinit var mProductAdapter: ProductAdapter*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,10 +38,12 @@ class MainActivity : BaseActivity(),ProductItemDelegate,ProductDelegate,Category
 
         rvCategories.layoutManager = LinearLayoutManager(applicationContext, LinearLayoutManager.HORIZONTAL, false)
 
+        //mCategoryAdapter = CategoryAdapter(applicationContext)
         rvCategories.adapter = mCategoryAdapter
 
         rvProducts.layoutManager = GridLayoutManager(applicationContext,2)
 
+       // mProductAdapter = ProductAdapter(applicationContext,this)
         rvProducts.adapter = mProductAdapter
 
         EcommerceAppModel.loadProduct(this)

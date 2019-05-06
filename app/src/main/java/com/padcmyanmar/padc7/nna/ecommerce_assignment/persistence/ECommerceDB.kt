@@ -12,7 +12,7 @@ import com.padcmyanmar.padc7.nna.ecommerce_assignment.persistence.dao.ProductDao
 import com.padcmyanmar.padc7.nna.ecommerce_assignment.persistence.typeconverters.CategoryTypeConverter
 import com.padcmyanmar.padc7.nna.ecommerce_assignment.persistence.typeconverters.ProductImageTypeConverter
 
-@Database(entities = arrayOf(ProductVO::class, CategoryVO::class), version = 3, exportSchema = false)
+@Database(entities = arrayOf(ProductVO::class, CategoryVO::class), version = 4, exportSchema = false)
 @TypeConverters(ProductImageTypeConverter::class,CategoryTypeConverter::class)
 abstract class ECommerceDB : RoomDatabase() {
     abstract fun ProductDao() : ProductDao
